@@ -5,7 +5,7 @@ class TicTacToe
 		@board = Array.new(@size+1) {Array.new(@size+1)} #the board itself, one row and column are used for information
 		@playSyms = playSyms #list of all the player symbols, add more symbols to add more players
 		@curPlayerInd = 0 #index of current player
-		@player == @playSyms[@curPlayerInd] # the first player is has first player symbol
+		@player = @playSyms[@curPlayerInd] # the first player is has first player symbol
 		@winReq = winReq #number of pieces in a row required
 		play #calls the play method
 	end
